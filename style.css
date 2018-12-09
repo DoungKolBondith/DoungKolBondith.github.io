@@ -172,6 +172,11 @@ i{
 	height: 200px;
 	border: solid 1px;
 	}
+table{
+	position: absolute;
+	top:10px;
+	left:1200px;
+}	
 
 
 
