@@ -7,14 +7,15 @@
 <body>
 	<div ng-app="myApp" ng-controller="myCtrl">
 <p>Please Input your name To see what happen</p>
-<form name="myForm"> <input name="MyFN" type="text" ng-model="firstname" required><br>
-<p ng-show="myForm.MyFN.MyLn.$dirty" >Hello {{fistname}}</p>
+<form name="myForm"> 
+Name:<input name="MyFN" type="text" ng-model="firstname" required><br>
+<p ng-show="myForm.MyFN.$dirty" >Hello {{firstname}}</p>
 </form>
 </div>
 <script>
 	var app=angular.module('myApp',[])
 	app.controller('myCtrl',function($scope){
-		$scope.firstname="Doung";
+		$scope.firstname="";
 		$scope.lastname="Kolbondith";
 		$scope.fullname= function()
 		{
