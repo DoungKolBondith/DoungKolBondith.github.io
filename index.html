@@ -6,10 +6,10 @@
 </head>
 <body>
 	<div ng-app="myApp" ng-controller="myCtrl">
-<p>{{fullname()}}</p>
 <p>Please Input your name To see what happen</p>
-First Name: <input type="text" ng-model="firstname"><br>
-Last Name: <input type="text" ng-model="lastname"><br>
+<form name="myForm"> <input name="MyFN" type="text" ng-model="firstname" required><br>
+<p ng-show="myForm.MyFN.MyLn.$dirty" >Hello {{fistname}}</p>
+</form>
 </div>
 <script>
 	var app=angular.module('myApp',[])
