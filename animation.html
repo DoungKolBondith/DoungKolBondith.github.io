@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-animate.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app="Myapp">
+	<div>
+		<input type="checkbox" ng-model="checked">
+		<div class="a" ng-hide="checked"></div>
+	</div>
+	<script>
+		var app=angular.module('Myapp',['ngAnimate']);
+	</script>
+</body>
+</html>
