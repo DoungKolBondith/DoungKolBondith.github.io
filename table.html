@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="Myapp" ng-controller="Myctrl">
+	<div>
+		<table>
+			<tr ng-repeat="x in names">
+				<td>{{x.Name}}</td>
+				<td>{{x.Country}}</td>
+	</div>
+	<script>
+		var app=angular.module('Myapp',['ngAnimate']);
+		app.controller("Myctrl",function($scope,$http){
+			$http.get("kolbondith.github.io/customer.php").then(function(response){$scope.name=response.data.records});
+			
+		})
+	</script>
+</body>
+</html>
