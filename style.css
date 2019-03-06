@@ -1,119 +1,45 @@
-h1{
-	text-align:center;
-	color:red;
-	font-size:35px;
+.d1{
+    position: absolute;
+    top:0px;
+    height: 100px;
 }
-.c1{
-	position: absolute;
-	left:20%;
-	top:10%;
-	background-color: black;
-	width:60%;
-	height:10%;
+.d2{
+    position: absolute;
+    top:100px;
+    width:100%;
 }
-.a1{
-	position:absolute; 
-	left:10%;
-	top:40%;
-	font-size: 20px;
-	text-decoration: none;
-	color:white;
+ul{
+    padding:0px;
+    list-style-type: none;
+    text-align: center;
+    width:100%;
+    position: sticky;
+
 }
-.a2{
-	position:absolute; 
-	left:20%;
-	top:40%;
-	font-size: 20px;
-	text-decoration: none;
-	color:white;
+ul li {
+    background-color: aqua;
+    display: inline-block;
+    width:calc(25% - 8px);
+    border-radius: 20px;
+    height: 30px;
+    float: left;
+    border: solid 2px;
+    box-shadow: 5px 5px 2px green;
+    
 }
-.a3{
-	position:absolute; 
-	left:30%;
-	top:40%;
-	font-size: 20px;
-	text-decoration: none;
-	color:white;
+a{
+    text-decoration: none;
+    position: relative;
+    color:white;
 }
-.a1:hover
-{
-	font-size: 30px;
+ul li ul li {
+    display: none;
+    color:white;
+    transition: 0.8s linear;
+    position: relative;
+    width:100%;
+    top:15px;
 }
-.a2:hover
-{
-	font-size: 30px;
-}
-.a3:hover
-{
-	font-size: 30px;
-}
-.c2{
-	position: absolute;
-	left:20%;
-	top:20%;
-	width:45%;
-	height:15%;
-	font-size: 15px;
-	font-family: tahoma;
-}
-img{
-	max-width: 300px;
-	max-height: 150px;
-	position: absolute;
-	left:2%;
-	top:1%
-}
-.c3{
-	width:30%;
-	height:20%;
-	position: absolute;
-	top:30%;
-	left:35%;
-}
-table{
-	border-collapse: collapse;
-	width:50%;
-	height:30%;
-	position: absolute;
-	top:50%;
-	left:25%;
-	text-align: center;
-}
-.h1{
-	position: absolute;
-	left:35%;
-	top:80%;
-}
-.c4{
-	background-color: white;
-	/*width:100px;
-	height: 100px;*/
-	position: absolute;
-	left:5%;
-	top:90%;
-	border-radius: 30%;
-}
-/*.c4 i{
-	position: relative;
-	top:35%;
-	font-size: 45px;
-	left: 30%;
-}*/
-i:hover{
-	transition:2s linear;
-	transform:rotateY(90deg);
-}
-i{
-	position: absolute;
-	font-size:35px;
-	left: 5%;
-	top:90%;
-}
-.c5{
-	position: absolute;
-	left:7%;
-	top:89%;
-	font-size:20px;
-	font-family: tahoma;
-	color:red;
+ul li:hover ul li{
+    display: block;
 }
