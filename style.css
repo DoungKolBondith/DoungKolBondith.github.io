@@ -129,3 +129,25 @@ img{
 	position: relative;
 	left:40px;
 }
+#d3{
+	position: relative;
+	left: 20px;
+}
+#a1{
+	position: absolute;
+	top:220px;
+	left: 250px;
+	color:#365899;
+	font-family: inherit;
+}
+#s2{
+	position: relative;
+	top:50px;
+	left:30px;
+	width: 200px;
+	height: 50px;
+	background-color: #69a74e;
+	border-radius: 10px;
+	font-family: Helvetica;
+	border-color: #3b6e22;
+}
