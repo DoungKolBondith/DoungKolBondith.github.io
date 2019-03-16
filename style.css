@@ -119,6 +119,8 @@ img{
 	position: absolute;
 	top:150px;
 	left:100px;
+	width:600px;
+	height:400px;
 }
 #r1{
 	position: relative;
@@ -150,4 +152,10 @@ img{
 	border-radius: 10px;
 	font-family: Helvetica;
 	border-color: #3b6e22;
+}
+@media screen and (max-width:500px){
+ img{
+	 width:100px;
+	 height:75px;
+ }
 }
