@@ -153,9 +153,9 @@ img{
 	font-family: Helvetica;
 	border-color: #3b6e22;
 }
-@media screen and (max-width:500px){
+@media screen and (max-width:800px){
  img{
-	 width:100px;
-	 height:75px;
+	 width:150px;
+	 height:100px;
  }
 }
